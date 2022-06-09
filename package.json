@@ -5,10 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start webpack --progress -p --config webpack.config.js --watch",
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/styled": "^10.3.0",
+    "emotion-theming": "^10.3.0",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"
